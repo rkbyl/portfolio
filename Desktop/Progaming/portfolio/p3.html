@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Josefin+Sans' rel='stylesheet' type='text/css'>
+	  <meta charset="UTF-8">
+    <meta name = 'viewport' content='width=device-width, initial-scale=1'>
+	  <title>My portfolio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/p.css">
+    <link rel="icon"
+      type="image/png"
+      href="imgs/favicon.png">
+    <script src="js/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $(window).scroll(function() {
+        if ($(document).scrollTop() >150) {
+          $("nav").addClass("test");
+        } else {
+          $("nav").removeClass("test");
+        }
+      });
+    });
+
+    function openlink1(){
+      window.open("https://www.si.umich.edu/")
+    }
+    function openlink2(){
+      window.open("https://www.linkedin.com/")
+    }
+    </script>
+    <style>
+    .test {
+        top: 0px !important;
+        position: fixed !important;
+        z-index: 100;
+    }
+    #mobile-nav{
+      position: absolute !important;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="wholeshow">
+      <img src="imgs/geo.jpg" alt="background image">
+      <header>
+        <nav class="btn-group" id="mobile-nav">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="glyphicon glyphicon-menu-hamburger"></span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-right">
+  	        <li><a href="index.html">Home</a></li>
+            <li><a href="p2.html">About</a></li>
+  	        <li class="active"><a href="p3.html">Blog</a></li>
+  	        <li><a href="p4.html">Photos</a></li>
+            </ul>
+        </nav>
+        <nav class="container-fluid" id="regular-nav">
+          <ul class="nav nav-tabs nav-justified">
+  	        <li><a href="index.html">Home</a></li>
+            <li><a href="p2.html">About</a></li>
+  	        <li class="active"><a href="p3.html">Blog</a></li>
+  	        <li><a href="p4.html">Photos</a></li>
+          </ul>
+        </nav>
+        <div id="logo">rb</div>
+        <p>UMSI student specializing in something or other...</p>
+      </header>
+      <section id="content3">
+        <h1>In Search of Remembrances of Things Past</h1>
+        <p>In their 2011 book Divining a Digital Future: Mess and Mythology in Ubiquitous Computing, Paul Dourish and Genevieve Bell write that:</p>
+        <blockquote>The dominant tense of ubicomp writing is that of the proximate future. That is, motivations and frames are often written not merely in the future tense, describing events and settings to come, but portray a proximate future, one just around the corner. The proximate future is invoked in observations that “Internet adoption levels will shortly reach...,” “We are entering a period when...,” “New technological opportunities are emerging that...,” or “Mobile phones are becoming the dominant form of...”</blockquote>
+        <p>This predisposition to be continually looking ahead is problematic, they point out, because it renders the present “irrelevant or at the least already outmoded.” In the fast-moving field of information everybody wants to be forward-thinking. To not be puts one at danger of being left behind. If Dourish and Bell are right about the consequences, however, what does that say about our treatment of the past, much less the present?</p>
+        <p>Last week in my Networked Computing class (SI 502) we took a break from programming in Python to learn about the history of the Internet. I found that dive into the (relatively-recent) past to be more revelatory and thought-provoking than any forward-looking reading I've done since the start of the semester. One of the things it made me realize was just how quickly I forget my own technological past. I had to ask my parents when we first got dial-up internet, and then cable internet, at our house because I couldn't remember well enough to even hazard a guess. You would think that such life-altering moments would be encased in one's memory, but I just had no idea. The answer, it turns out, is around 1995 and 2000 respectively, but even my parents couldn't really remember well enough to pin a definite year on it with any confidence.</p>
+        <p>My goal, then, is to use this blog as an opportunity and impetus to periodically engage in some reflection. Take stock, look back, that sort of thing. Whether it's a fact learned yesterday or an event that took place a hundred years ago, let's see if we can't find some interesting things that make the never-ending wait for the future seem a bit more bearable.</p>
+      </section>
+      <footer>
+        <button role="link" onclick="openlink1()" id="exlink1">UMSI</button>
+        <button role="link" onclick="openlink2()" id="exlink2">LinkedIn</button>
+        <p id="copy">Website designed by Richard Byler, &copy;2015</p>
+      </footer>
+      </div>
+    <script src="js/bootstrap.min.js"></script>
+
+    </body>
+</html>

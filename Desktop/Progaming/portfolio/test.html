@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Josefin+Sans' rel='stylesheet' type='text/css'>
+	  <meta charset="UTF-8">
+    <meta name = 'viewport' content='width=device-width, initial-scale=1'>
+	  <title>My portfolio</title>
+	  <!-- <link rel="stylesheet" href="css/default.css"> -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="css/bootstrap-theme.min.css"> -->
+    <!-- <link rel="stylesheet" href="css/p.css"> -->
+    <link rel="icon"
+      type="image/png"
+      href="imgs/favicon.png">
+
+
+    <!-- <script> function turngold(){
+        var x=document.getElementsByClassName("glyphicon-leaf");
+        var i;
+        for (i = 0; i < x.length; i++){
+        x[i].style.color="rgb(230, 184, 0)";
+        }
+      }
+      function turnblack(){
+        var x=document.getElementsByClassName("glyphicon-leaf");
+        var i;
+        for (i = 0; i < x.length; i++){
+        x[i].style.color="black";
+        }
+      }
+    </script> -->
+
+  <style>
+  p {
+    margin: 10px;
+    padding: 5px;
+    border: 2px solid #666;
+  }
+  body{
+    height: 2000px;
+  }
+  </style>
+<script>
+$(document).ready(function(){
+  $(window).scroll(function() {
+      if ($(document).scrollTop() > 50) {
+        $("p").addClass("test");
+      } else {
+        $("p").removeClass("test");
+      }
+  });
+});
+</script>
+<style>
+.test {
+    background-color: yellow;
+}
+</style>
+
+  </head>
+  <body>
+    <h1>Words<h1>
+    <h1>Words<h1>
+    <h1>Words<h1>
+    <h1>Words<h1>
+    <p>Hello</p>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

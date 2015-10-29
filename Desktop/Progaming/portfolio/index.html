@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Josefin+Sans' rel='stylesheet' type='text/css'>
+	  <meta charset="UTF-8">
+    <meta name = 'viewport' content='width=device-width, initial-scale=1'>
+	  <title>My portfolio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/p.css">
+    <link rel="icon"
+      type="image/png"
+      href="imgs/favicon.png">
+      <script src="js/jquery.min.js"></script>
+      <script>
+      $(document).ready(function(){
+        $(window).scroll(function() {
+          if ($(document).scrollTop() >150) {
+            $("nav").addClass("test");
+          } else {
+            $("nav").removeClass("test");
+          }
+        });
+      });
+      </script>
+      <style>
+      .test {
+          top: 0px !important;
+          position: fixed !important;
+          z-index: 100;
+      }
+      #mobile-nav{
+        position: absolute !important;
+      }
+      </style>
+    <script>
+      function turngold1(){
+        x=document.getElementById("gold1");
+        x.style.color="rgb(230, 184, 0)";
+      }
+      function turnblack1(){
+        x=document.getElementById("gold1");
+        x.style.color="black";
+      }
+
+      function turngold2(){
+          x=document.getElementById("gold2");
+          x.style.color="rgb(230, 184, 0)";
+      }
+      function turnblack2(){
+          x=document.getElementById("gold2");
+          x.style.color="black";
+      }
+      function turngold3(){
+        x=document.getElementById("gold3");
+        x.style.color="rgb(230, 184, 0)";
+      }
+      function turnblack3(){
+        x=document.getElementById("gold3");
+        x.style.color="black";
+      }
+      function turngold4(){
+        x=document.getElementById("gold4");
+        x.style.color="rgb(230, 184, 0)";
+      }
+      function turnblack4(){
+        x=document.getElementById("gold4");
+        x.style.color="black";
+      }
+      function turngold5(){
+        x=document.getElementById("gold5");
+        x.style.color="rgb(230, 184, 0)";
+      }
+      function turnblack5(){
+        x=document.getElementById("gold5");
+        x.style.color="black";
+      }
+
+      function openlink1(){
+        window.open("https://www.si.umich.edu/")
+      }
+      function openlink2(){
+        window.open("https://www.linkedin.com/")
+      }
+    </script>
+  </head>
+  <body>
+    <div id="wholeshow">
+      <img src="imgs/geo.jpg" alt="background image">
+    <header>
+      <nav class="btn-group" id="mobile-nav">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="glyphicon glyphicon-menu-hamburger"></span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-right">
+	        <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="p2.html">About</a></li>
+	        <li><a href="p3.html">Blog</a></li>
+	        <li><a href="p4.html">Photos</a></li>
+          </ul>
+      </nav>
+      <nav class="container-fluid" id="regular-nav">
+        <ul class="nav nav-tabs nav-justified">
+	        <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="p2.html">About</a></li>
+	        <li><a href="p3.html">Blog</a></li>
+	        <li><a href="p4.html">Photos</a></li>
+        </ul>
+      </nav>
+      <div id="logo">rb</div>
+      <p>UMSI student specializing in something or other...</p>
+    </header>
+      <section id="listicle">
+        <a href="#"><div class="line" id="elem1">
+          <img src="imgs/construction1.jpg" alt="under construction" tabindex="1" onmouseover="turngold1()" onmouseout="turnblack1()" onfocus="turngold1()" onfocusout="turnblack1()">
+    <!-- Image taken without permission from http://www.spanishmosstrail.com/2015/08/13/spanish-moss-trail-under-construction-phase-4/ -->
+          <p><span class="glyphicon glyphicon-leaf" id="gold1"></span> Project 1</p>
+        </div></a>
+        <a href="#"><div class="line">
+          <img src="imgs/construction1.jpg" alt="under construction" tabindex="2" onmouseover="turngold2()" onmouseout="turnblack2()" onfocus="turngold2()" onfocusout="turnblack2()">
+          <p><span class="glyphicon glyphicon-leaf" id="gold2"></span> Project 2</p>
+        </div></a>
+        <a href="#"><div class="line">
+          <img src="imgs/construction1.jpg" alt="under construction" tabindex="3" onmouseover="turngold3()" onmouseout="turnblack3()" onfocus="turngold3()" onfocusout="turnblack3()">
+          <p><span class="glyphicon glyphicon-leaf" id="gold3"></span> Project 3</p>
+        </div></a>
+        <a href="#"><div class="line">
+          <img src="imgs/construction1.jpg" alt="under construction" tabindex="4" onmouseover="turngold4()" onmouseout="turnblack4()" onfocus="turngold4()" onfocusout="turnblack4()">
+          <p><span class="glyphicon glyphicon-leaf" id="gold4"></span> Project 4</p>
+        </div></a>
+        <a href="#"><div class="line">
+          <img src="imgs/construction1.jpg" alt="under construction" tabindex="5" onmouseover="turngold5()" onmouseout="turnblack5()" onfocus="turngold5()" onfocusout="turnblack5()">
+          <p><span class="glyphicon glyphicon-leaf" id="gold5"></span> Project 5</p>
+        </div></a>
+    </section>
+    <footer>
+      <button role="link" onclick="openlink1()" id="exlink1">UMSI</button>
+      <button role="link" onclick="openlink2()" id="exlink2">LinkedIn</button>
+      <p id="copy">Website designed by Richard Byler, &copy;2015</p>
+    </footer>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

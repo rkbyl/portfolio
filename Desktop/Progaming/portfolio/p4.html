@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Josefin+Sans' rel='stylesheet' type='text/css'>
+	  <meta charset="UTF-8">
+    <meta name = 'viewport' content='width=device-width, initial-scale=1'>
+	  <title>My portfolio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/p.css">
+    <link rel="icon"
+      type="image/png"
+      href="imgs/favicon.png">
+    <script src="js/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $(window).scroll(function() {
+        if ($(document).scrollTop() >150) {
+          $("nav").addClass("test");
+        } else {
+          $("nav").removeClass("test");
+        }
+      });
+    });
+
+    function openlink1(){
+      window.open("https://www.si.umich.edu/")
+    }
+    function openlink2(){
+      window.open("https://www.linkedin.com/")
+    }
+    </script>
+    <style>
+    .test {
+        top: 0px !important;
+        position: fixed !important;
+        z-index: 100;
+    }
+    #mobile-nav{
+      position: absolute !important;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="wholeshow">
+      <img src="imgs/geo.jpg" alt="background image">
+      <header>
+        <nav class="btn-group" id="mobile-nav">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="glyphicon glyphicon-menu-hamburger"></span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-right">
+  	        <li><a href="index.html">Home</a></li>
+            <li><a href="p2.html">About</a></li>
+  	        <li><a href="p3.html">Blog</a></li>
+  	        <li class="active"><a href="p4.html">Photos</a></li>
+            </ul>
+        </nav>
+        <nav class="container-fluid" id="regular-nav">
+          <ul class="nav nav-tabs nav-justified">
+  	        <li><a href="index.html">Home</a></li>
+            <li><a href="p2.html">About</a></li>
+  	        <li><a href="p3.html">Blog</a></li>
+  	        <li class="active"><a href="p4.html">Photos</a></li>
+          </ul>
+        </nav>
+        <div id="logo">rb</div>
+        <p>UMSI student specializing in something or other...</p>
+      </header>
+    <section class="container" id="content4">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="carousel slide" id="carnival" data-interval="false">
+            <ol class="carousel-indicators">
+              <li data-target="#carnival" data-slide-to="0" class="active"></li>
+              <li data-target="#carnival" data-slide-to="1"></li>
+              <li data-target="#carnival" data-slide-to="2"></li>
+              <li data-target="#carnival" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="imgs/northquad.jpg" alt="North Quad">
+              </div>
+              <div class="item">
+                <img src="imgs/hatcher.jpg" alt="Hatcher Graduate Library">
+              </div>
+              <div class="item">
+                <img src="imgs/bighouse.jpg" alt="The Big House">
+              </div>
+              <div class="item">
+                <img src="imgs/elizabeth.jpg" alt="Elizabeth Street">
+              </div>
+            </div>
+            <a class="left carousel-control" href="#carnival" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carnival" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section id="content4full">
+      <img class="leftpic top" src="imgs/northquad.jpg" alt="North Quad" title="North Quad, home of UMSI" tabindex="1">
+      <img class="rightpic top" src="imgs/hatcher.jpg" alt="Hatcher Graduate Library" title="Hatcher Graduate Library" tabindex="2">
+      <img class="leftpic bottom" src="imgs/bighouse.jpg" alt="The Big House" title="The Big House, minus 100,000 people" tabindex="3">
+      <img class="rightpic bottom" src="imgs/elizabeth.jpg" alt="Elizabeth Street" title="The street I live on, viewed from the front of my house" tabindex="4">
+      <div></div>
+    </section>
+    <footer>
+      <button role="link" onclick="openlink1()" id="exlink1">UMSI</button>
+      <button role="link" onclick="openlink2()" id="exlink2">LinkedIn</button>
+      <p id="copy">Website designed by Richard Byler, &copy;2015</p>
+    </footer>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
